@@ -28,13 +28,56 @@ git merge branchName => fast-forward
 git merge --no-ff branchName => fast-forward
 
 
-
-
 # clone
 git clone URL
 
 # alias 
 git log --all --graph --decorate --oneline
 git config --global alias.longterm "git log --all --graph --decorate --oneline"
+
+#################################
+1.ADIM: 
+fullstack adında bir dizin oluşturalım
+
+2.ADIM: 
+git init yapalım
+
+3.ADIM:
+GitHub repository "fullstack" adında  repository oluşturalım
+
+4.ADIM:
+Git-GitHub remote bağlantısını kuralım
+Master branchinde
+data.txt dosyasy oluşturup => içine Helloworld 
+Git push 
+
+5.ADIM
+GitHub ReadMe.md oluşturalım
+WD(Bilgisayarımıza ReadMe.md(git pull)
+
+6.ADIM: 
+frontend 
+backend 
+database adında 3 tane branch oluşturalım.
+
+branch list 
+frontend.txt => React  , (git add , git commit)
+backend.txt  => Spring MVC-DATA  (git add , git commit)
+database.txt => SQL  (git add , git commit)
+
+7.ADIM:
+öncelikle frontend ana branch'e merge yapalım (Fast-forward)
+öncelikle backend ana branch'e merge yapalım (Fast-forward)
+öncelikle database ana branch'e merge yapalım (No-Fast-forward)
+
+8.ADIM 
+frontend 
+backend 
+database
+branchleri silelim.
+
+
+9.ADIM 
+Alias: git log --all --graph --decorate --oneline kısayolunu oluşturalım 
 
 
