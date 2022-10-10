@@ -21,7 +21,7 @@ git branch frontend
 git checkout branchName
 git branch frontend
 git checkout branchName
-git checkout -b frontend
+git checkout -b backend
 git brach -D branchName
 # dikkat: önce ana branch gitmeliyiz.
 git merge branchName => fast-forward
