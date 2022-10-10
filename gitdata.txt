@@ -7,12 +7,34 @@ git push
 
 # stash 
 git stash
+git stash save "stashAdi"
 git stash list 
 git stash pop 
 git stash drop stash@{0}
+git stash apply stash@{0}
 
 
 # branch 
 git branch
 git branch --all
 git branch frontend
+git checkout branchName
+git branch frontend
+git checkout branchName
+git checkout -b frontend
+git brach -D branchName
+# dikkat: önce ana branch gitmeliyiz.
+git merge branchName => fast-forward
+git merge --no-ff branchName => fast-forward
+
+
+
+
+# clone
+git clone URL
+
+# alias 
+git log --all --graph --decorate --oneline
+git config --global alias.longterm "git log --all --graph --decorate --oneline"
+
+
