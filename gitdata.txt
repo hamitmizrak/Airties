@@ -49,6 +49,38 @@ git clone URL
 git log --all --graph --decorate --oneline
 git config --global alias.longterm "git log --all --graph --decorate --oneline"
 
+# tag 
+git add .
+git tag v1
+git show v1
+git add .
+git tag v1
+git checkout v1 
+git checkout v2
+git tag --delete v1 
+
+
+# diff 
+git diff b919c2246b63b3d8d934e60129fd47d49887448c  6b29d10539f5ac569ca0cdc31c2a12552f6cd977
+
+
+# reset 
+git log 
+git reset --hard HEAD
+git reset --hard HEAD~2
+
+# conflict => Çakışma
+git stash save "stashAdiXYZ" 
+git reset HEAD~1
+git add .
+git commit -m "conflict after"
+git push --force
+
+git stash apply stash@{0}
+git stash drop stash@{0}
+git add .
+git commit -m "conflict after-2"
+
 #################################
 1.ADIM: 
 fullstack adında bir dizin oluşturalım
