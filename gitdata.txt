@@ -1,9 +1,22 @@
+# INIT
 git init 
 git add .
 git commit -m "first commit"
 git remote add origin https://github
 git push -u origin main
 git push 
+
+# commit 
+Dikkat: Önceden dosya eklenmesi gerekiyor
+git add .
+git commit -m "first commit"
+YERINE 
+git commit -a -m "first commit"
+
+
+# checkout
+git checkout branchName 
+git checkout commitCode  
 
 # stash 
 git stash
@@ -23,6 +36,7 @@ git branch frontend
 git checkout branchName
 git checkout -b backend
 git brach -D branchName
+
 # dikkat: önce ana branch gitmeliyiz.
 git merge branchName => fast-forward
 git merge --no-ff branchName => fast-forward
