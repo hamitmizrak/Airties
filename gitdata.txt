@@ -5,8 +5,14 @@ git remote add origin https://github
 git push -u origin main
 git push 
 
-
+# stash 
 git stash
 git stash list 
 git stash pop 
 git stash drop stash@{0}
+
+
+# branch 
+git branch
+git branch --all
+git branch frontend
