@@ -1,1 +1,12 @@
-1.line data
+git init 
+git add .
+git commit -m "first commit"
+git remote add origin https://github
+git push -u origin main
+git push 
+
+
+git stash
+git stash list 
+git stash pop 
+git stash drop stash@{0}
